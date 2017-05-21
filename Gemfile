@@ -40,9 +40,10 @@ gem 'jquery-rails'
 # gem 'capistrano-rails', group: :development
 
 group :test do
-  gem "rspec-rails"
+  gem "rspec-rails", ">= 2.0.0.beta"
   gem "factory_girl_rails"
   gem 'ffaker'
+  gem "shoulda-matchers" 
 end
 
 group :development, :test do
